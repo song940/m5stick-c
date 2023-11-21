@@ -4,7 +4,6 @@ float gyroX, gyroY, gyroZ;
 
 void setup()
 {
-  Serial.begin(9600);
   M5.begin();
   M5.IMU.Init();
   M5.Lcd.fillScreen(BLACK);
@@ -23,5 +22,5 @@ void loop()
   M5.Lcd.printf("X:%7.2f\n", gyroX);
   M5.Lcd.printf("Y:%7.2f\n", gyroY);
   M5.Lcd.printf("Z:%7.2f\n", gyroZ);
-  delay(1000);
+  delay(100);
 }
